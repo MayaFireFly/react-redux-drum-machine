@@ -12,7 +12,7 @@ class App extends React.Component{
   }
   render(){
     return <Provider store={this.props.store}>
-      <div className='App App__row App_border' id='drum-machine'>
+      <div className='App App__row App_border App__row_end' id='drum-machine'>
 
         <div className='App_w-50'>
           <div className='App__row'>          

@@ -4,7 +4,7 @@ import App from '../components/App/App';
 import {createStore} from 'redux';
 
 describe('App', () => {
-  const reducer = (state = [], action) => {
+  const reducer = (state = {}, action) => {
     switch(action.type){
     default:
       return state;

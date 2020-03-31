@@ -2,7 +2,7 @@ import React from 'react';
 import './Toggler.css';
 
 const Toggler = () => {
-  const changeActive = (elem) => {
+  const changeActiveClass = (elem) => {
     const togglerBtns = elem.parentNode.children;
     for(let btn_idx = 0; btn_idx < togglerBtns.length; btn_idx++){
       if(togglerBtns[btn_idx].classList.contains('Toggler__ball_active')){
@@ -10,6 +10,20 @@ const Toggler = () => {
       }  
     };
     elem.classList.add('Toggler__ball_active');     
+  };
+
+  const toggleVisibilityPads = (elem) => {    
+    const padContainerRow = elem.parentNode.parentNode.parentNode.previousSibling.firstChild;    
+    if(padContainerRow.style.display != 'none'){
+      padContainerRow.style.display = 'none';
+    }else{
+      padContainerRow.style.display = 'flex';
+    }
+  };
+
+  const changeActive = (elem) => {
+    changeActiveClass(elem);
+    toggleVisibilityPads(elem);     
   };
 
   return <div className='App_border Toggler App__row'>   
