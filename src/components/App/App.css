@@ -31,6 +31,7 @@
 }
 .App_w-50{
   width:50%;
+  margin: .5em auto;
 }
 @media (max-width:650px){ 
   .App_w-50{

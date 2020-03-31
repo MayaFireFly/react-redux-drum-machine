@@ -10,5 +10,5 @@
   cursor: pointer;
 }
 .Toggler__ball_active{
-  background-color: var(--lightColor);
+  background-color: var(--purpleColor);
 }
