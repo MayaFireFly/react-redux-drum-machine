@@ -1,0 +1,14 @@
+.Toggler{
+  width:5em;
+  height: 2em;
+  background-color: var(--fontColor);
+  margin-bottom: 1em;  
+}
+.Toggler__ball{
+  width: 2em;
+  height: 1.8em;
+  cursor: pointer;
+}
+.Toggler__ball_active{
+  background-color: var(--lightColor);
+}

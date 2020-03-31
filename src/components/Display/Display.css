@@ -1,0 +1,9 @@
+.Display{
+  background-color: var(--lightColor);
+  text-align: center;
+  width:20em;
+  height: 2em;
+  line-height: 2em;
+  border:1px solid var(--lightColor);
+  border-radius: 5px;
+}

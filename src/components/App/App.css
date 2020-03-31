@@ -1,0 +1,39 @@
+*{
+  box-sizing: border-box;
+  --fontColor: #17301C;
+  --bgColor: #379392;
+  --lightColor: #4FB0C6;
+  --blueColor: #4F86C6;
+  --purpleColor: #744FC6;  
+}
+.App{  
+  background-color: var(--bgColor);
+  color: var(--fontColor);    
+  min-width:80%;
+  max-width: 100%;
+  min-height: 30vh;  
+}
+.App_border{
+  border:2px solid var(--fontColor);
+  border-radius: 10px;
+}
+.App__row{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
+}
+.App__error{
+  width: 100%;
+  text-align: center;  
+  color: red;
+}
+.App_w-50{
+  width:50%;
+}
+@media (max-width:650px){ 
+  .App_w-50{
+    width:100%;
+  }   
+}
